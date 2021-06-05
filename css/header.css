@@ -54,37 +54,3 @@ header:after {
   max-width: 11.8125rem;
   z-index: 4;
 }
-
-html {
-  font-size: 16px;
-  height: 100%;
-}
-
-body {
-  height: 100%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-decoration: none;
-}
-
-.container {
-  max-width: 1170px;
-  /* CONTAINER ДЛЯ РЕЗИНОВОЙ ВЕРСТКИ width: 1170px */
-  /* width: 1170px; */
-  margin: 0 auto;
-  padding: 0 15px;
-  /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
-  position: relative;
-  z-index: 3;
-  /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
-}
-
-section {
-  width: 100%;
-}

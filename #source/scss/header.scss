@@ -1,11 +1,27 @@
 header {
   background-image: url(/img/background.png);
   position: relative;
-  left: 0;
-  top: 0;
-  z-index: 1;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  overflow: hidden; /*обрезаем лишнее*/
+  width: 100%;
+  z-index: 1;
+  .header-container {
+  }
+}
+header:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%; /* УКАЗЫВАЕМ 100%, КАК БЫ ПОВТОРЯЯ ОСНОВНОЙ СЛОЙ*/
+  height: 100%; /* УКАЗЫВАЕМ 100%, КАК БЫ ПОВТОРЯЯ ОСНОВНОЙ СЛОЙ*/
+  background-color: rgba(43, 46, 74, 0.95);
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 95%;
 }
 .header-column {
   display: flex;
@@ -19,6 +35,7 @@ header {
       display: flex;
       width: 100%;
       max-width: 11.8125rem;
+      z-index: 4;
     }
   }
 }
