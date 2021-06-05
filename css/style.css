@@ -1,17 +1,31 @@
 @charset "UTF-8";
-header {
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.fullscreen-header {
   background-image: url(/img/background.png);
   position: relative;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
-  /*обрезаем лишнее*/
   width: 100%;
   z-index: 1;
 }
-header:after {
+.fullscreen-header .header-container {
+  background-color: aquamarine;
+  width: 100%;
+}
+
+.fullscreen-header:after {
   content: "";
   display: block;
   position: absolute;
@@ -75,6 +89,7 @@ body {
 
 .container {
   max-width: 1170px;
+  width: 100%;
   /* CONTAINER ДЛЯ РЕЗИНОВОЙ ВЕРСТКИ width: 1170px */
   /* width: 1170px; */
   margin: 0 auto;

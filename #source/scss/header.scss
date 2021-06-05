@@ -1,17 +1,23 @@
-header {
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.fullscreen-header {
   background-image: url(/img/background.png);
   position: relative;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden; /*обрезаем лишнее*/
   width: 100%;
   z-index: 1;
   .header-container {
+    background-color: aquamarine;
+    width: 100%;
   }
 }
-header:after {
+.fullscreen-header:after {
   content: "";
   display: block;
   position: absolute;
