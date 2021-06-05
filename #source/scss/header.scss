@@ -1,0 +1,24 @@
+header {
+  background-image: url(/img/background.png);
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.header-column {
+  display: flex;
+  flex-direction: column;
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2.375rem;
+    padding-bottom: 2.375rem;
+    .header-nav__logo {
+      display: flex;
+      width: 100%;
+      max-width: 11.8125rem;
+    }
+  }
+}

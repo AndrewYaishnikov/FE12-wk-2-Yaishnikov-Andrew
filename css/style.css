@@ -1,3 +1,41 @@
+@charset "UTF-8";
+header {
+  background-image: url(/img/background.png);
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header-column .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 2.375rem;
+  padding-bottom: 2.375rem;
+}
+.header-column .header-nav .header-nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 11.8125rem;
+}
 
 html {
   font-size: 16px;
@@ -7,7 +45,8 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
 }
 
@@ -19,6 +58,7 @@ html {
   padding: 0 15px;
   /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
   position: relative;
+  z-index: 1;
   /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
 }
 

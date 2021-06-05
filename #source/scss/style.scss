@@ -1,0 +1,26 @@
+@import "header.scss";
+html {
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.container {
+  max-width: 1170px;
+  /* CONTAINER ДЛЯ РЕЗИНОВОЙ ВЕРСТКИ width: 1170px */
+  /* width: 1170px; */
+  margin: auto;
+  padding: 0 15px;
+  /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
+  position: relative;
+  z-index: 1;
+  /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
+}
+section {
+  width: 100%;
+}
+
