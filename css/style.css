@@ -21,7 +21,6 @@
   z-index: 1;
 }
 .fullscreen-header .header-container {
-  background-color: aquamarine;
   width: 100%;
 }
 
@@ -53,20 +52,77 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
   padding-top: 2.375rem;
   padding-bottom: 2.375rem;
+  border-bottom: 1px solid #666666;
 }
 .header-column .header-nav .header-nav__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  max-width: 11.8125rem;
+  height: 100%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   z-index: 4;
+}
+.header-column .header-nav .header-nav__logo .logo {
+  max-height: auto;
+  max-width: 11.8125rem;
+}
+.header-column .header-nav .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.header-column .header-nav .header-menu .menu-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  z-index: 6;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-column .header-nav .header-menu .menu-row .menu-row__item {
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: 700;
+  z-index: 6;
+}
+.header-column .header-nav .header-menu .menu-row .menu-row__item a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  line-height: normal;
+  opacity: 0.75;
+  outline: none;
 }
 
 html {
