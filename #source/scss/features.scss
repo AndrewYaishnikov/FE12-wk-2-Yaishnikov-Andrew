@@ -1,67 +1,45 @@
-.features {
-}
-.container {
-}
-.features__container {
-}
 .features-block {
   display: flex;
+  height: auto;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  align-items: baseline;
+  padding-top: 7.5625rem;
+  padding-bottom: 3.125rem;
   .features-block__item {
     display: flex;
-    max-height: 11.625rem;
+    max-height: auto;
     max-width: 18.5rem;
-    width: 100%;
     border: 1px solid black;
     flex-direction: column;
-    text-align: center;
     justify-content: space-around;
-    .features-logo {
-      display: flex;
-      max-width: 100%;
+    margin-bottom: 4.625rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    .logo {
       max-height: 100%;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
+      min-height: 100%;
+      margin-bottom: 2.125rem;
     }
-    .features-text {
-      width: 296px;
-      height: 56px;
-      color: #6c7279;
-      font-family: Raleway;
-      font-size: 14px;
-      font-weight: 400;
-      font-style: normal;
-      letter-spacing: normal;
-      line-height: 21px;
+  }
+  .features-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .features__title {
       text-align: center;
-      /* Text style for "Cras justo" */
-      font-style: normal;
-      letter-spacing: normal;
-      line-height: normal;
-      .features__title {
-        text-align: center;
-        margin-bottom: 4.1666666667rem;
-        height: auto;
-      }
-      .features__description {
-        width: 296px;
-        height: 56px;
-        color: #6c7279;
-        font-family: Raleway;
-        font-size: 14px;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: 21px;
-        text-align: center;
-               font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
-      }
+      margin-bottom: 1.5625rem;
+      height: auto;
+      text-transform: uppercase;
+    }
+    .features__description {
+      text-align: center;
     }
   }
 }
