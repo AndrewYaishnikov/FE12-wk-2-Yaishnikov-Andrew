@@ -41,6 +41,10 @@
     padding-top: 2.375rem;
     padding-bottom: 2.375rem;
     border-bottom: 1px solid #666666;
+    @media all and (max-width: 767px) {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
 
     .header-nav__logo {
       display: flex;
@@ -53,6 +57,15 @@
       .logo {
         max-height: auto;
         max-width: 11.8125rem;
+        @media all and (max-width: 1200px) {
+          max-width: 11.8125rem;
+        }
+        @media all and (max-width: 992px) {
+          max-width: 10rem;
+        }
+        @media all and (max-width: 767px) {
+          max-width: 8rem;
+        }
       }
     }
     .header-menu {
@@ -66,13 +79,20 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-
         align-items: center;
+
         .menu-row__item {
           font-family: Raleway;
           font-size: 0.8125rem;
           font-weight: 700;
           z-index: 6;
+          @media all and (max-width: 650px) {
+            padding: 0.5rem 0.5rem;
+          }
+
+          @media all and (max-width: 992px) {
+            padding: 0.5rem 0.5rem;
+          }
           a {
             color: #ffffff;
             text-decoration: none;
@@ -93,6 +113,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media all and (max-width: 1200px) {
+    padding: 9.875rem 0;
+  }
+  @media all and (max-width: 992px) {
+    padding: 8rem 0;
+  }
+  @media all and (max-width: 767px) {
+    padding: 6rem 0;
+  }
   h1 {
     max-width: 54.4rem;
     color: #ffffff;
@@ -106,6 +135,15 @@
     text-transform: uppercase;
     height: auto;
     margin-bottom: 2.5625rem;
+    @media all and (max-width: 1200px) {
+      max-width: 54.4rem;
+    }
+    @media all and (max-width: 992px) {
+      max-width: 45rem;
+    }
+    @media all and (max-width: 767px) {
+      max-width: 35rem;
+    }
   }
 }
 .header__subtitle {
@@ -128,7 +166,7 @@
 .header-article__btn {
   display: inline-flex;
   padding: 1.125rem 3.125rem;
-  text-transform: uppercase;
+
   background-color: #e84545;
   color: #ffffff;
   font-family: "Raleway - Semi Bold";
@@ -142,6 +180,10 @@
   line-height: normal;
   transition-duration: 0.3s;
   cursor: pointer;
+  @media all and (max-width: 767px) {
+    display: block;
+    width: 100%;
+  }
   &:hover {
     box-shadow: -0.25rem 0 0.12rem -0.25rem black;
     transform: scale(1.2);

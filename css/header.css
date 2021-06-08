@@ -61,6 +61,12 @@
   padding-bottom: 2.375rem;
   border-bottom: 1px solid #666666;
 }
+@media all and (max-width: 767px) {
+  .header-column .header-nav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
 .header-column .header-nav .header-nav__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,6 +86,21 @@
 .header-column .header-nav .header-nav__logo .logo {
   max-height: auto;
   max-width: 11.8125rem;
+}
+@media all and (max-width: 1200px) {
+  .header-column .header-nav .header-nav__logo .logo {
+    max-width: 11.8125rem;
+  }
+}
+@media all and (max-width: 992px) {
+  .header-column .header-nav .header-nav__logo .logo {
+    max-width: 10rem;
+  }
+}
+@media all and (max-width: 767px) {
+  .header-column .header-nav .header-nav__logo .logo {
+    max-width: 8rem;
+  }
 }
 .header-column .header-nav .header-menu {
   display: -webkit-box;
@@ -113,6 +134,16 @@
   font-weight: 700;
   z-index: 6;
 }
+@media all and (max-width: 650px) {
+  .header-column .header-nav .header-menu .menu-row .menu-row__item {
+    padding: 0.5rem 0.5rem;
+  }
+}
+@media all and (max-width: 992px) {
+  .header-column .header-nav .header-menu .menu-row .menu-row__item {
+    padding: 0.5rem 0.5rem;
+  }
+}
 .header-column .header-nav .header-menu .menu-row .menu-row__item a {
   color: #ffffff;
   text-decoration: none;
@@ -139,6 +170,21 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media all and (max-width: 1200px) {
+  .header-article {
+    padding: 9.875rem 0;
+  }
+}
+@media all and (max-width: 992px) {
+  .header-article {
+    padding: 8rem 0;
+  }
+}
+@media all and (max-width: 767px) {
+  .header-article {
+    padding: 6rem 0;
+  }
+}
 .header-article h1 {
   max-width: 54.4rem;
   color: #ffffff;
@@ -152,6 +198,21 @@
   text-transform: uppercase;
   height: auto;
   margin-bottom: 2.5625rem;
+}
+@media all and (max-width: 1200px) {
+  .header-article h1 {
+    max-width: 54.4rem;
+  }
+}
+@media all and (max-width: 992px) {
+  .header-article h1 {
+    max-width: 45rem;
+  }
+}
+@media all and (max-width: 767px) {
+  .header-article h1 {
+    max-width: 35rem;
+  }
 }
 
 .header__subtitle {
@@ -179,7 +240,6 @@
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 1.125rem 3.125rem;
-  text-transform: uppercase;
   background-color: #e84545;
   color: #ffffff;
   font-family: "Raleway - Semi Bold";
@@ -194,6 +254,12 @@
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   cursor: pointer;
+}
+@media all and (max-width: 767px) {
+  .header-article__btn {
+    display: block;
+    width: 100%;
+  }
 }
 .header-article__btn:hover {
   -webkit-box-shadow: -0.25rem 0 0.12rem -0.25rem black;

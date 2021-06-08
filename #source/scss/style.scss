@@ -1,6 +1,14 @@
 html {
   font-size: 16px;
-  height: 100%;
+  @media all and (max-width: 1200px) {
+    font-size: 17px;
+  }
+  @media all and (max-width: 992px) {
+    font-size: 15px;
+  }
+  @media all and (max-width: 767px) {
+    font-size: 12px;
+  }
 }
 body {
   height: 100%;
@@ -23,6 +31,17 @@ body {
   position: relative;
   z-index: 3;
   /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
+
+  @media all and (max-width: 992px) {
+    .container {
+      max-width: 750px;
+    }
+  }
+  @media all and (max-width: 767px) {
+    .container {
+      max-width: 90%;
+    }
+  }
 }
 section {
   width: 100%;
@@ -39,6 +58,7 @@ section {
   letter-spacing: normal;
   line-height: normal;
 }
+
 @import "header.scss";
 @import "features.scss";
 @import "works.scss";
