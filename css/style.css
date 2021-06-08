@@ -370,7 +370,6 @@ section {
   display: flex;
   max-height: auto;
   max-width: 18.5rem;
-  border: 1px solid black;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
