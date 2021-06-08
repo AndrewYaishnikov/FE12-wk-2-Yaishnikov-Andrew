@@ -1,18 +1,15 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-width: 100wh;
-  min-height: 100vh;
 }
 .fullscreen-header {
   background-image: url(/img/background.png);
   position: relative;
   min-height: 100vh;
-  min-width: 100wh;
+  min-width: 100vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   z-index: 1;
   .header-container {
     // background-color: rgba(223, 236, 232);
@@ -36,6 +33,7 @@
   display: flex;
   flex-direction: column;
   max-height: 46.875rem;
+
   .header-nav {
     display: flex;
     max-width: 100%;
@@ -64,12 +62,12 @@
 
       .menu-row {
         display: flex;
-        max-width: 100%;
+        width: 100%;
         z-index: 6;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        text-align: left;
+
         align-items: center;
         .menu-row__item {
           font-family: Raleway;
