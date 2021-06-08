@@ -25,9 +25,25 @@
       object-fit: contain;
       min-width: auto;
       height: auto;
+      position: relative;
+      cursor: pointer;
+      transition: 0.3s;
     }
   }
   .img-work {
     width: 100%;
+    &:hover {
+      content: "2222222222222222222222222222222222222";
+      transform: scale(1.2);
+      height: 100%;
+      width: 100%;
+      display: block;
+      position: absolute;
+      color: rgba(218, 45, 45, 0.85);
+      top: 0;
+      left: 0;
+      color: lightcoral;
+      z-index: 20;
+    }
   }
 }

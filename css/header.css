@@ -134,6 +134,9 @@
   font-weight: 700;
   z-index: 6;
 }
+.header-column .header-nav .header-menu .menu-row .menu-row__item:hover {
+  text-decoration: underline;
+}
 @media all and (max-width: 650px) {
   .header-column .header-nav .header-menu .menu-row .menu-row__item {
     padding: 0.5rem 0.5rem;
