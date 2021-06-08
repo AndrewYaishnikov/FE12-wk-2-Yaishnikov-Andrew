@@ -20,6 +20,12 @@
   margin-left: -1rem;
   margin-right: -1rem;
 }
+@media all and (max-width: 1170px) {
+  .features-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 @media all and (max-width: 922px) {
   .features-block {
     -webkit-box-pack: center;
@@ -71,7 +77,6 @@
 }
 .features-block .features-block__item .logo {
   height: 3.75rem;
-  width: 3.75rem;
   margin-bottom: 2.125rem;
 }
 .features-block .features-text {
