@@ -7,12 +7,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-width: 100wh;
+  min-height: 100vh;
 }
 
 .fullscreen-header {
   background-image: url(/img/background.png);
   position: relative;
   min-height: 100vh;
+  min-width: 100wh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
