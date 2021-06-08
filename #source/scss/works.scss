@@ -1,13 +1,36 @@
-.works-block {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  object-position: center;
-  object-fit: cover;
- 
-}
-.img-work {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.fullscreen-works-block {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+
+  .works-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+
+    left: 0;
+
+    min-width: 100%;
+
+    .work-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      object-fit: cover;
+      flex-grow: 1;
+      flex-shrink: 1;
+      object-position: center;
+      object-fit: contain;
+      min-width: auto;
+      height: auto;
+    }
+  }
+  .img-work {
+    min-width: 100%;
+    height: auto;
+    object-position: center;
+    object-fit: cover;
+  }
 }
