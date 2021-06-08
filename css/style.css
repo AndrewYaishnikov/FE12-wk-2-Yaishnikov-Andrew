@@ -46,7 +46,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 46.875rem;
 }
 .header-column .header-nav {
   display: -webkit-box;
@@ -314,6 +313,7 @@
           align-items: center;
   -o-object-fit: cover;
      object-fit: cover;
+  padding: 1px;
   width: 25%;
   -o-object-position: center;
      object-position: center;
@@ -350,7 +350,7 @@ body {
   /* CONTAINER ДЛЯ РЕЗИНОВОЙ ВЕРСТКИ width: 1170px */
   /* width: 1170px; */
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1rem;
   /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
   position: relative;
   z-index: 3;
@@ -364,11 +364,11 @@ section {
 .description {
   color: #6c7279;
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  line-height: 21px;
+  line-height: 1.3125rem;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;

@@ -46,7 +46,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 46.875rem;
 }
 .header-column .header-nav {
   display: -webkit-box;
