@@ -57,6 +57,12 @@ section {
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+  @media all and (max-width: 767px) {
+    font-size: 1rem;
+  }
+  @media all and (max-width: 491px) {
+    text-align: justify;
+  }
 }
 
 @import "header.scss";
