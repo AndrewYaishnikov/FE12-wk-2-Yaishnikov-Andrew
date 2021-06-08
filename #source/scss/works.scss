@@ -1,9 +1,13 @@
 .works-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    .work-img {
-        
-    }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  object-position: center;
+  object-fit: cover;
+ 
+}
+.img-work {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
