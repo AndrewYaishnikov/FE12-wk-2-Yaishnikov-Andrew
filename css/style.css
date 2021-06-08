@@ -1,4 +1,52 @@
 @charset "UTF-8";
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  /* CONTAINER ДЛЯ РЕЗИНОВОЙ ВЕРСТКИ width: 1170px */
+  /* width: 1170px; */
+  margin: 0 auto;
+  padding: 0 1rem;
+  /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
+  position: relative;
+  z-index: 3;
+  /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
+}
+
+section {
+  width: 100%;
+}
+
+.description {
+  color: #6c7279;
+  font-family: Raleway;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.3125rem;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,52 +372,4 @@
 }
 .fullscreen-works-block .img-work {
   width: 100%;
-}
-
-html {
-  font-size: 16px;
-  height: 100%;
-}
-
-body {
-  height: 100%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-decoration: none;
-}
-
-.container {
-  max-width: 1170px;
-  width: 100%;
-  /* CONTAINER ДЛЯ РЕЗИНОВОЙ ВЕРСТКИ width: 1170px */
-  /* width: 1170px; */
-  margin: 0 auto;
-  padding: 0 1rem;
-  /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
-  position: relative;
-  z-index: 3;
-  /*КОНТЕЙНЕР ПЕРЕКРЫВАЕТ МАСКУ*/
-}
-
-section {
-  width: 100%;
-}
-
-.description {
-  color: #6c7279;
-  font-family: Raleway;
-  font-size: 0.875rem;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 1.3125rem;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }

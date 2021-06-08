@@ -1,7 +1,3 @@
-@import "header.scss";
-@import "features.scss";
-@import "works.scss";
-
 html {
   font-size: 16px;
   height: 100%;
@@ -43,3 +39,6 @@ section {
   letter-spacing: normal;
   line-height: normal;
 }
+@import "header.scss";
+@import "features.scss";
+@import "works.scss";
