@@ -388,6 +388,9 @@ section {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .features-block .features-block:nth-child(n+3) {
+    display: none;
+  }
 }
 @media all and (max-width: 922px) {
   .features-block {
@@ -395,12 +398,18 @@ section {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .features-block .features-block:nth-child(n+3) {
+    display: none;
+  }
 }
 @media all and (max-width: 767px) {
   .features-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .features-block .features-block:nth-child(n+3) {
+    display: none;
   }
 }
 .features-block .features-block__item {
@@ -440,9 +449,10 @@ section {
 }
 .features-block .features-block__item .logo {
   height: 3.75rem;
+  width: auto;
   margin-bottom: 2.125rem;
 }
-.features-block .features-text {
+.features-block .features-block__item .features-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,16 +464,31 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.features-block .features-text .features__title {
+.features-block .features-block__item .features-text .features__title {
   text-align: center;
   margin-bottom: 1.5625rem;
   height: auto;
   text-transform: uppercase;
 }
-.features-block .features-text .features__description {
+.features-block .features-block__item .features-text .features__description {
   text-align: center;
 }
 
+@media all and (max-width: 922px) {
+  .features-block__item:nth-child(n+5) {
+    display: none;
+  }
+}
+@media all and (max-width: 737px) {
+  .features-block__item:nth-child(n+5) {
+    display: none;
+  }
+}
+@media all and (max-width: 500px) {
+  .features-block__item:nth-child(n+5) {
+    display: none;
+  }
+}
 .fullscreen-works-block {
   min-height: 100vh;
   min-width: 100vw;
@@ -483,6 +508,21 @@ section {
   top: 0;
   left: 0;
   min-width: 100%;
+}
+@media all and (max-width: 968px) {
+  .fullscreen-works-block .works-block .work-item:nth-child(n+7) {
+    display: none;
+  }
+}
+@media all and (max-width: 767px) {
+  .fullscreen-works-block .works-block .work-item:nth-child(n+7) {
+    display: none;
+  }
+}
+@media all and (max-width: 400px) {
+  .fullscreen-works-block .works-block .work-item:nth-child(n+5) {
+    display: none;
+  }
 }
 .fullscreen-works-block .works-block .work-item {
   display: -webkit-box;
@@ -510,18 +550,26 @@ section {
   transition: 0.3s;
 }
 .fullscreen-works-block .works-block .work-item:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   z-index: 9;
+}
+@media all and (max-width: 968px) {
+  .fullscreen-works-block .works-block .work-item {
+    width: 33.3333333%;
+  }
+}
+@media all and (max-width: 767px) {
+  .fullscreen-works-block .works-block .work-item {
+    width: 50%;
+  }
 }
 .fullscreen-works-block .works-block .img-work {
   width: 100%;
 }
 .fullscreen-works-block .works-block .img-work:hover {
-  opacity: 0.9;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  z-index: 10;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .work-content {
@@ -530,7 +578,7 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #e84545;
+  background-color: rgba(204, 58, 58, 0.85);
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,6 +597,40 @@ section {
   transition: 0.3s;
 }
 .work-content:hover {
-  opacity: 0.7;
-  z-index: 10;
+  opacity: 1;
+}
+.work-content .work-title {
+  height: 0.6875rem;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 0.8125rem;
+  z-index: 12;
+  opacity: 1;
+}
+.work-content .work-text {
+  height: 0.9375;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  /* Text style for "User Inter" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  z-index: 11;
+  opacity: 1;
 }

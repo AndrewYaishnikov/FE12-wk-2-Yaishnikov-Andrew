@@ -9,10 +9,24 @@
     flex-wrap: wrap;
     position: absolute;
     top: 0;
-
     left: 0;
-
     min-width: 100%;
+
+    @media all and (max-width: 968px) {
+      .work-item:nth-child(n + 7) {
+        display: none;
+      }
+    }
+    @media all and (max-width: 767px) {
+      .work-item:nth-child(n + 7) {
+        display: none;
+      }
+    }
+    @media all and (max-width: 400px) {
+      .work-item:nth-child(n + 5) {
+        display: none;
+      }
+    }
 
     .work-item {
       display: flex;
@@ -29,33 +43,32 @@
       cursor: pointer;
       transition: 0.3s;
       &:hover {
-        // opacity: 0.9; //ЗАДАЕМ 0.9 ПРИ НАВЕДЕНИИ
-        transform: scale(1.1);
+        transform: scale(1.05);
         z-index: 9;
+      }
+      @media all and (max-width: 968px) {
+        width: 33.3333333%;
+      }
+      @media all and (max-width: 767px) {
+        width: 50%;
       }
     }
     .img-work {
       width: 100%;
       &:hover {
-        opacity: 0.9;
-        transform: scale(1.1);
-        z-index: 10;
+        transform: scale(1.05);
       }
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      // z-index: 11;
     }
   }
 }
+
 .work-content {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(232, 69, 69);
-
+  background-color: rgba(204, 58, 58, 0.85); //0.85 прозрачность цвета
   opacity: 0; //ЗАДАЕМ 0 В СТАТИЧНОМ СОСТОЯНИИ
   display: flex;
   flex-direction: column;
@@ -63,8 +76,41 @@
   align-items: center;
   transition: 0.3s;
   &:hover {
-    opacity: 0.7;
-    // transform: scale(1.1);
-    z-index: 10;
+    opacity: 1; //ЗАДАЕМ 0.7 при наведении
+  }
+  .work-title {
+    height: 0.6875rem;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 0.8125rem;
+    z-index: 12;
+    opacity: 1;
+  }
+  .work-text {
+    height: 0.9375;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    /* Text style for "User Inter" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    z-index: 11;
+    opacity: 1;
   }
 }
