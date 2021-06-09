@@ -86,8 +86,12 @@
           font-size: 0.8125rem;
           font-weight: 700;
           z-index: 6;
+          opacity: 0.75;
+          // линейное увеличение opacity для ссылки
+          transition: opacity 0.1s linear;
           &:hover {
             text-decoration: underline;
+            opacity: 1;
           }
           @media all and (max-width: 650px) {
             padding: 0.5rem 0.5rem;

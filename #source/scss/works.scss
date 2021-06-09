@@ -28,22 +28,43 @@
       position: relative;
       cursor: pointer;
       transition: 0.3s;
+      &:hover {
+        // opacity: 0.9; //ЗАДАЕМ 0.9 ПРИ НАВЕДЕНИИ
+        transform: scale(1.1);
+        z-index: 9;
+      }
+    }
+    .img-work {
+      width: 100%;
+      &:hover {
+        opacity: 0.9;
+        transform: scale(1.1);
+        z-index: 10;
+      }
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // z-index: 11;
     }
   }
-  .img-work {
-    width: 100%;
-    &:hover {
-      content: "2222222222222222222222222222222222222";
-      transform: scale(1.2);
-      height: 100%;
-      width: 100%;
-      display: block;
-      position: absolute;
-      color: rgba(218, 45, 45, 0.85);
-      top: 0;
-      left: 0;
-      color: lightcoral;
-      z-index: 20;
-    }
+}
+.work-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(232, 69, 69);
+
+  opacity: 0; //ЗАДАЕМ 0 В СТАТИЧНОМ СОСТОЯНИИ
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.7;
+    // transform: scale(1.1);
+    z-index: 10;
   }
 }

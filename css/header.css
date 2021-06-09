@@ -133,9 +133,13 @@
   font-size: 0.8125rem;
   font-weight: 700;
   z-index: 6;
+  opacity: 0.75;
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
 }
 .header-column .header-nav .header-menu .menu-row .menu-row__item:hover {
   text-decoration: underline;
+  opacity: 1;
 }
 @media all and (max-width: 650px) {
   .header-column .header-nav .header-menu .menu-row .menu-row__item {
