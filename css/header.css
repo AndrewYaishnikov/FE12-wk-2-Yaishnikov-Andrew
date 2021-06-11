@@ -1,14 +1,4 @@
 @charset "UTF-8";
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .fullscreen-header {
   background-image: url(/img/background.png);
   position: relative;

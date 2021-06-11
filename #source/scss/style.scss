@@ -64,7 +64,10 @@ section {
     text-align: justify;
   }
 }
-
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
 @import "header.scss";
 @import "features.scss";
 @import "works.scss";
