@@ -1,7 +1,31 @@
+// СОЗДАНИЕ МИКСИНА/////////////////////
+@mixin title-footer {
+  height: 10px;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+@mixin width-item-30 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  justify-content: center;
+}
+///////////////////////////////////////////
+///////////////////СОЗДАНИЕ ПЕРЕМЕННОй///////////
+
+////////////////////////
 footer {
   display: flex;
   flex-direction: column;
-
+  // ВЕРХНИЙ FOOTER
   .footer_contacts {
     display: flex;
     padding-top: 4.4375rem;
@@ -12,32 +36,52 @@ footer {
     background-color: #3a3e64;
     width: 100%;
     height: auto;
-    .location {
-    }
+    // СЕКЦИЯ LOCATION
+    .container {
+      .footer__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: baseline;
 
-    .title {
-      height: 10px;
-      color: #ffffff;
-      font-family: Raleway;
-      font-size: 14px;
-      font-weight: 700;
-      font-style: normal;
-      letter-spacing: normal;
-      line-height: normal;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 1.25rem;
-    }
+        .item-location {
+          @include width-item-30;
+          .title {
+            @include title-footer;
+          }
+          .location__description {
+            opacity: 0.5;
+            color: #ffffff;
+            font-family: Raleway;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 22.5px;
+            text-align: center;
+          }
+        }
+        // СЕКЦИЯ SOCIAL
+        .item-social {
+          @include width-item-30;
+        }
+        .social__title {
+          @include title-footer;
+        }
 
-    .social {
-    }
-    .social__title {
-    }
-    .social__icon {
-    }
-    .social__icon-row {
+        .social__icon {
+        }
+        .social__icon-row {
+        }
+      }
+      .item-about {
+        @include width-item-30;
+      }
     }
   }
+
+  // НИЖНИЙ FOOTER
   .footer__copyright {
     display: flex;
     background-color: #313454;
