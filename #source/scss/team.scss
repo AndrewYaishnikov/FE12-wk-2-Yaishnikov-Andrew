@@ -6,39 +6,61 @@
   padding: 6.25rem 0;
   margin: 0 -1rem;
   flex-wrap: wrap;
-  width: 100%;
+  max-width: 100%;
+  @media all and (max-width: 1170px) {
+    justify-content: space-around;
+  }
+  @media all and (max-width: 571px) {
+    justify-content: center;
+  }
 }
 .manager__card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 0 1rem;
+  @media all and (max-width: 1170px) {
+    margin-bottom: 5rem;
+    border-bottom: 2px solid rebeccapurple;
+  }
+  @media all and (max-width: 1000px) {
+    margin: 5rem 2rem;
+    margin-bottom: 5rem;
+  }
+  // max-width: 15rem;
 }
 .manager__photo {
+  display: flex;
   margin-bottom: 1.875rem;
+  width: 250px;
+  max-width: 100%;
 }
 .manager__info {
   display: flex;
-
   flex-direction: column;
   align-items: flex-start;
+  max-width: fit-content;
 }
 .manager-info__title {
   color: #2d3033;
   font-size: 1.375rem;
-  font-family: "Raleway, AdobeInvisFont, MyriadPro-Regular, san-serif";
+  font-family: "Raleway", sans-serif;
   margin-bottom: 0.6875rem;
 }
 .manager-info__subtitle {
   margin-bottom: 1.875rem;
-  font-family: "Raleway, AdobeInvisFont, MyriadPro-Regular, san-serif";
+  font-family: "Raleway", sans-serif;
   color: #e84545;
   font-size: 0.8125rem;
+  text-transform: uppercase;
 }
 .manager-info__text {
   color: #6c7279;
+  // display: none;
+  flex-shrink: inherit;
   font-size: 0.875rem;
-  font-family: "Raleway, AdobeInvisFont, MyriadPro-Regular, san-serif";
+  font-family: "Raleway", sans-serif;
 }
 .manager__social {
+  margin-bottom: 1rem;
 }

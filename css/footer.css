@@ -83,7 +83,7 @@ footer .footer_contacts .container .footer__row .item-location {
 footer .footer_contacts .container .footer__row .item-location .title {
   height: 0.625rem;
   color: #ffffff;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   font-style: normal;
@@ -102,7 +102,7 @@ footer .footer_contacts .container .footer__row .item-location .title {
 footer .footer_contacts .container .footer__row .item-location .location__description {
   opacity: 0.5;
   color: #ffffff;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   font-style: normal;
@@ -132,7 +132,7 @@ footer .footer_contacts .container .footer__row .item-social {
 footer .footer_contacts .container .footer__row .item-social .social__title {
   height: 0.625rem;
   color: #ffffff;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   font-style: normal;
@@ -172,7 +172,7 @@ footer .footer_contacts .container .footer__row .item-about {
 footer .footer_contacts .container .footer__row .item-about .title {
   height: 0.625rem;
   color: #ffffff;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   font-style: normal;
@@ -191,7 +191,7 @@ footer .footer_contacts .container .footer__row .item-about .title {
 footer .footer_contacts .container .footer__row .item-about .about__description {
   opacity: 0.5;
   color: #ffffff;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   font-style: normal;
@@ -245,7 +245,7 @@ footer .footer__copyright .footer__container .footer-copyright__text {
       -ms-flex-align: center;
           align-items: center;
   color: #808080;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   font-style: normal;
@@ -254,7 +254,7 @@ footer .footer__copyright .footer__container .footer-copyright__text {
 }
 footer .footer__copyright .footer__container .footer-copyright__text .kamal {
   color: #ffffff;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;

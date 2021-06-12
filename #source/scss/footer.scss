@@ -2,7 +2,7 @@
 @mixin title-footer {
   height: 0.625rem;
   color: #ffffff;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   font-style: normal;
@@ -21,7 +21,7 @@
 @mixin description-footer {
   opacity: 0.5;
   color: #ffffff;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   font-style: normal;
@@ -149,7 +149,7 @@ footer {
         justify-content: center;
         align-items: center;
         color: #808080;
-        font-family: Raleway;
+        font-family: "Raleway", sans-serif;
         font-size: 0.875rem;
         font-weight: 400;
         font-style: normal;
@@ -157,7 +157,7 @@ footer {
         line-height: 1.40625rem;
         .kamal {
           color: #ffffff;
-          font-family: Raleway;
+          font-family: "Raleway", sans-serif;
           font-style: normal;
           letter-spacing: normal;
           line-height: normal;
