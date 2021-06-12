@@ -643,6 +643,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 footer .footer_contacts {
   display: -webkit-box;
@@ -650,17 +653,7 @@ footer .footer_contacts {
   display: flex;
   padding-top: 4.4375rem;
   padding-bottom: 5.4375rem;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   background-color: #3a3e64;
-  width: 100%;
-  height: auto;
 }
 footer .footer_contacts .container .footer__row {
   display: -webkit-box;
@@ -673,6 +666,8 @@ footer .footer_contacts .container .footer__row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
@@ -692,10 +687,10 @@ footer .footer_contacts .container .footer__row .item-location {
           justify-content: center;
 }
 footer .footer_contacts .container .footer__row .item-location .title {
-  height: 10px;
+  height: 0.625rem;
   color: #ffffff;
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   font-style: normal;
   letter-spacing: normal;
@@ -708,11 +703,11 @@ footer .footer_contacts .container .footer__row .item-location .location__descri
   opacity: 0.5;
   color: #ffffff;
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  line-height: 22.5px;
+  line-height: 1.40625rem;
   text-align: center;
 }
 footer .footer_contacts .container .footer__row .item-social {
@@ -729,10 +724,10 @@ footer .footer_contacts .container .footer__row .item-social {
           justify-content: center;
 }
 footer .footer_contacts .container .footer__row .social__title {
-  height: 10px;
+  height: 0.625rem;
   color: #ffffff;
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   font-style: normal;
   letter-spacing: normal;
@@ -755,10 +750,10 @@ footer .footer_contacts .container .item-about {
           justify-content: center;
 }
 footer .footer_contacts .container .item-about .title {
-  height: 10px;
+  height: 0.625rem;
   color: #ffffff;
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   font-style: normal;
   letter-spacing: normal;
@@ -771,11 +766,11 @@ footer .footer_contacts .container .item-about .about__description {
   opacity: 0.5;
   color: #ffffff;
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  line-height: 22.5px;
+  line-height: 1.40625rem;
   text-align: center;
 }
 footer .footer__copyright {
@@ -816,11 +811,11 @@ footer .footer__copyright .footer__container .footer-copyright__text {
      object-position: center;
   color: #808080;
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  line-height: 22.5px;
+  line-height: 1.40625rem;
 }
 footer .footer__copyright .footer__container .footer-copyright__text .kamal {
   color: #ffffff;

@@ -1,9 +1,9 @@
 // СОЗДАНИЕ МИКСИНА/////////////////////
 @mixin title-footer {
-  height: 10px;
+  height: 0.625rem;
   color: #ffffff;
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   font-style: normal;
   letter-spacing: normal;
@@ -18,30 +18,38 @@
   width: 20%;
   justify-content: center;
 }
+@mixin description-footer {
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.40625rem;
+  text-align: center;
+}
 ///////////////////////////////////////////
-///////////////////СОЗДАНИЕ ПЕРЕМЕННОй///////////
 
-////////////////////////
 footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   // ВЕРХНИЙ FOOTER
   .footer_contacts {
     display: flex;
     padding-top: 4.4375rem;
     padding-bottom: 5.4375rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
     background-color: #3a3e64;
-    width: 100%;
-    height: auto;
+
     // СЕКЦИЯ LOCATION
     .container {
       .footer__row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
         align-items: baseline;
 
@@ -51,15 +59,7 @@ footer {
             @include title-footer;
           }
           .location__description {
-            opacity: 0.5;
-            color: #ffffff;
-            font-family: Raleway;
-            font-size: 14px;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: 22.5px;
-            text-align: center;
+            @include description-footer;
           }
         }
         // СЕКЦИЯ SOCIAL
@@ -81,15 +81,7 @@ footer {
           @include title-footer;
         }
         .about__description {
-          opacity: 0.5;
-          color: #ffffff;
-          font-family: Raleway;
-          font-size: 14px;
-          font-weight: 400;
-          font-style: normal;
-          letter-spacing: normal;
-          line-height: 22.5px;
-          text-align: center;
+          @include description-footer;
         }
       }
     }
@@ -114,15 +106,14 @@ footer {
         flex-direction: column;
         font-size: 3.75rem;
         font-weight: 400;
-
         object-position: center;
         color: #808080;
         font-family: Raleway;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
         font-style: normal;
         letter-spacing: normal;
-        line-height: 22.5px;
+        line-height: 1.40625rem;
         .kamal {
           color: #ffffff;
           font-family: Raleway;
