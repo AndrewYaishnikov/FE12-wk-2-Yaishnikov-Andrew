@@ -1,0 +1,44 @@
+.managers-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6.25rem 0;
+  margin: 0 -1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.manager__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 1rem;
+}
+.manager__photo {
+  margin-bottom: 1.875rem;
+}
+.manager__info {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+}
+.manager-info__title {
+  color: #2d3033;
+  font-size: 1.375rem;
+  font-family: "Raleway, AdobeInvisFont, MyriadPro-Regular, san-serif";
+  margin-bottom: 0.6875rem;
+}
+.manager-info__subtitle {
+  margin-bottom: 1.875rem;
+  font-family: "Raleway, AdobeInvisFont, MyriadPro-Regular, san-serif";
+  color: #e84545;
+  font-size: 0.8125rem;
+}
+.manager-info__text {
+  color: #6c7279;
+  font-size: 0.875rem;
+  font-family: "Raleway, AdobeInvisFont, MyriadPro-Regular, san-serif";
+}
+.manager__social {
+}
