@@ -242,6 +242,9 @@ section {
   opacity: 0.75;
   outline: none;
 }
+.header-column .header-nav .header-menu .menu-row .menu-row__item a:hover {
+  color: #e84545;
+}
 
 .header-article {
   display: -webkit-box;
