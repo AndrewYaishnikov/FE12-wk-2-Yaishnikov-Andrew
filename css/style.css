@@ -868,9 +868,7 @@ footer .footer__copyright .footer__container .footer-copyright__text .kamal {
   letter-spacing: normal;
 }
 .download-block .download__btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   padding: 1.125rem 3.125rem;
   background-color: #e84545;
   color: #ffffff;
