@@ -68,9 +68,11 @@ section {
   display: flex;
   flex-direction: column;
 }
+
 @import "header.scss";
 @import "features.scss";
 @import "works.scss";
 @import "footer.scss";
 @import "download.scss";
 @import "team.scss";
+@import "review.scss";

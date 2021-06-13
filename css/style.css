@@ -1234,3 +1234,81 @@ footer .footer_contacts .container .item-about .about__description {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+
+.review {
+  padding: 40px 0;
+}
+.review .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.review .slide .slide__foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 31.25rem;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.review .slide .slide__foto img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+.review .slide .slide__content {
+  background-color: #740d6b;
+  padding-left: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.review .slide .slide__content .content__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 31.25rem;
+  color: #ffffff;
+  font-family: "Cardo", sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: 42px;
+  text-align: left;
+  /* Text style for "“Integer p" */
+  margin-bottom: 30px;
+}
+.review .slide .slide__content .content__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 285px;
+  height: 10px;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+  /* Text style for "S, usan Si" */
+}

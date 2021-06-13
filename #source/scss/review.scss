@@ -1,0 +1,59 @@
+.review {
+  padding: 40px 0;
+  .slide {
+    display: flex;
+    flex-direction: row;
+    .slide__foto {
+      display: flex;
+      height: 31.25rem;
+      width: 50%;
+      overflow: hidden;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 4;
+      }
+    }
+    .slide__content {
+      background-color: rgb(116, 13, 107);
+      padding-left: 5rem;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      justify-content: center;
+      .content__text {
+        display: flex;
+        width: 31.25rem;
+        color: #ffffff;
+
+        font-family: "Cardo", sans-serif;
+        font-size: 36px;
+        font-style: italic;
+        letter-spacing: normal;
+        line-height: 42px;
+        text-align: left;
+        /* Text style for "“Integer p" */
+
+        margin-bottom: 30px;
+      }
+      .content__author {
+        display: flex;
+        justify-content: center;
+        width: 285px;
+        height: 10px;
+        color: #ffffff;
+        font-family: Raleway;
+        font-size: 13px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 21px;
+        text-align: left;
+        text-transform: uppercase;
+        /* Text style for "S, usan Si" */
+      }
+    }
+  }
+}
