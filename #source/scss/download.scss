@@ -43,6 +43,7 @@
     text-transform: uppercase;
     line-height: normal;
     transition-duration: 0.3s;
+    transition: 0.3s;
     cursor: pointer;
     @media all and (max-width: 767px) {
       display: block;
@@ -50,10 +51,15 @@
     }
     &:hover {
       box-shadow: -0.25rem 0 0.12rem -0.25rem black;
-      transform: scale(1.01);
-      opacity: 60%;
-      border-color: transparent;
-      mask: rgba(43, 46, 74, 0.95);
+      transform: scale(1.02);
+      // opacity: 60%;
+
+      background-color: #ffffff;
+      color: #e84545;
+      font-weight: 900;
+
+      //   border: 1px solid black;
+      // }
     }
   }
 }
