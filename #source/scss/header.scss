@@ -104,6 +104,7 @@
             line-height: normal;
             opacity: 0.75;
             outline: none;
+
             // &:hover {
             //   color: #e84545;
             //   color: #ffffff;
@@ -193,7 +194,7 @@
   }
   &:hover {
     box-shadow: -0.25rem 0 0.12rem -0.25rem black;
-    transform: scale(1.01);
+    transform: scale(1.02);
     // opacity: 60%;
 
     background-color: rgba(255, 255, 255, 0.95);
