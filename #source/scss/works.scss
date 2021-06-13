@@ -1,65 +1,53 @@
-// .fullscreen-works-block {
-//   min-height: 100vh;
-//   min-width: 100vw;
-//   position: relative;
-
-  .works-block {
-    display: flex;
-    // flex-direction: row;
-    flex-wrap: wrap;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // min-width: 100%;
-
-    @media all and (max-width: 968px) {
-      .work-item:nth-child(n + 7) {
-        display: none;
-      }
-    }
-    @media all and (max-width: 767px) {
-      .work-item:nth-child(n + 7) {
-        display: none;
-      }
-    }
-    @media all and (max-width: 400px) {
-      .work-item:nth-child(n + 5) {
-        display: none;
-      }
-    }
-
-    .work-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      object-fit: cover;
-      padding: 1px;
-      width: 25%;
-      object-position: center;
-      object-fit: contain;
-      min-width: auto;
-      height: auto;
-      position: relative;
-      cursor: pointer;
-      transition: 0.3s;
-      &:hover {
-        transform: scale(1.05);
-        z-index: 9;
-      }
-      @media all and (max-width: 968px) {
-        width: 33.3333333%;
-      }
-      @media all and (max-width: 767px) {
-        width: 50%;
-      }
-    }
-    .img-work {
-      width: 100%;
-      &:hover {
-        transform: scale(1.05);
-      }
+.works-block {
+  display: flex;
+  flex-wrap: wrap;
+  @media all and (max-width: 968px) {
+    .work-item:nth-child(n + 7) {
+      display: none;
     }
   }
+  @media all and (max-width: 767px) {
+    .work-item:nth-child(n + 7) {
+      display: none;
+    }
+  }
+  @media all and (max-width: 400px) {
+    .work-item:nth-child(n + 5) {
+      display: none;
+    }
+  }
+  .work-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    padding: 1px;
+    width: 25%;
+    object-position: center;
+    object-fit: contain;
+    min-width: auto;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.05);
+      z-index: 9;
+    }
+    @media all and (max-width: 968px) {
+      width: 33.3333333%;
+    }
+    @media all and (max-width: 767px) {
+      width: 50%;
+    }
+  }
+  .img-work {
+    width: 100%;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
 // }
 
 .work-content {
