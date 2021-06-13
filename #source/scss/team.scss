@@ -7,6 +7,9 @@
   margin: 0 -1rem;
   flex-wrap: wrap;
   max-width: 100%;
+  align-items: baseline;
+  top: 0;
+  left: 0;
   @media all and (max-width: 1170px) {
     justify-content: space-around;
   }
@@ -26,14 +29,17 @@
   @media all and (max-width: 1000px) {
     margin: 5rem 2rem;
     margin-bottom: 5rem;
+    width: 250px;
   }
   // max-width: 15rem;
 }
 .manager__photo {
   display: flex;
   margin-bottom: 1.875rem;
-  width: 250px;
-  max-width: 100%;
+  width: inherit;
+  img {
+    width: 250px;
+  }
 }
 .manager__info {
   display: flex;
@@ -58,9 +64,44 @@
   color: #6c7279;
   // display: none;
   flex-shrink: inherit;
+  text-align: justify;
   font-size: 0.875rem;
   font-family: "Raleway", sans-serif;
+  margin-bottom: 1.25rem;
 }
 .manager__social {
-  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  .links {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .social-link {
+      display: flex;
+      font-size: 41px;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
 }
+//   .fab {
+//     display: flex;
+//     font-size: 41px;
+//     fill: #ffffff;
+//     color: #e84545;
+//   }
+// }
+// .facebook {
+//   object-fit: cover;
+//   object-position: left;
+// }
+// .twitter {
+//   object-fit: cover;
+//   object-position: center;
+// }
+// .linkedin {
+//   object-fit: cover;
+//   object-position: right;
+// }

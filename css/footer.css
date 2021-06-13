@@ -259,3 +259,8 @@ footer .footer__copyright .footer__container .footer-copyright__text .kamal {
   letter-spacing: normal;
   line-height: normal;
 }
+
+.far {
+  font-size: 1rem;
+  color: red;
+}

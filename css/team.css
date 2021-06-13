@@ -17,6 +17,11 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 100%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  top: 0;
+  left: 0;
 }
 @media all and (max-width: 1170px) {
   .managers-row {
@@ -55,6 +60,7 @@
   .manager__card {
     margin: 5rem 2rem;
     margin-bottom: 5rem;
+    width: 250px;
   }
 }
 
@@ -63,8 +69,10 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.875rem;
+  width: inherit;
+}
+.manager__photo img {
   width: 250px;
-  max-width: 100%;
 }
 
 .manager__info {
@@ -102,10 +110,38 @@
   color: #6c7279;
   -ms-flex-negative: inherit;
       flex-shrink: inherit;
+  text-align: justify;
   font-size: 0.875rem;
   font-family: "Raleway", sans-serif;
+  margin-bottom: 1.25rem;
 }
 
 .manager__social {
-  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.manager__social .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.manager__social .links .social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 41px;
+}
+.manager__social .links .social-link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
