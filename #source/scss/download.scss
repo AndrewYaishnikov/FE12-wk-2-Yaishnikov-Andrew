@@ -15,6 +15,10 @@
     font-weight: 700;
     font-style: normal;
     letter-spacing: normal;
+    @media all and (max-width: 767px) {
+      justify-content: center;
+      text-align: center;
+    }
   }
   .download__subtitle {
     font-family: "Raleway-Light, AdobeInvisFont, MyriadPro-Regular, serif";
@@ -27,6 +31,7 @@
     margin-bottom: 2.4375rem;
     font-style: normal;
     letter-spacing: normal;
+    
   }
   .download__btn {
     display: inline-block;

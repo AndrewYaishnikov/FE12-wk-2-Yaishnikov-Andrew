@@ -141,6 +141,15 @@
   display: flex;
   font-size: 41px;
 }
+.manager__social .links .social-link .fa-linkedin {
+  color: #1e499b;
+}
+.manager__social .links .social-link .fa-twitter-square {
+  color: #1e7aa5;
+}
+.manager__social .links .social-link .fa-facebook-square {
+  color: #3a47fa;
+}
 .manager__social .links .social-link:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);

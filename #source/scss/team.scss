@@ -80,6 +80,15 @@
     .social-link {
       display: flex;
       font-size: 41px;
+      .fa-linkedin {
+        color: rgb(30, 73, 155);
+      }
+      .fa-twitter-square {
+        color: rgb(30, 122, 165);
+      }
+      .fa-facebook-square {
+        color: rgb(58, 71, 250);
+      }
       &:hover {
         transform: scale(1.2);
       }

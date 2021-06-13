@@ -25,6 +25,14 @@
   font-style: normal;
   letter-spacing: normal;
 }
+@media all and (max-width: 767px) {
+  .download-block .donload__title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
 .download-block .download__subtitle {
   font-family: "Raleway-Light, AdobeInvisFont, MyriadPro-Regular, serif";
   opacity: 1;
