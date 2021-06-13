@@ -96,9 +96,22 @@ footer {
           }
 
           .social__icon {
+            display: block;
           }
-          .social__icon-row {
-            margin-bottom: 2rem;
+          .links {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .social-link {
+              display: flex;
+              font-size: 41px;
+              &:hover {
+                transform: scale(1.2);
+
+                margin-bottom: 2rem;
+              }
+            }
           }
         }
 
