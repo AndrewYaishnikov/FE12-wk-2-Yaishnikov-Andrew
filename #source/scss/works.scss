@@ -1,16 +1,16 @@
-.fullscreen-works-block {
-  min-height: 100vh;
-  min-width: 100vw;
-  position: relative;
+// .fullscreen-works-block {
+//   min-height: 100vh;
+//   min-width: 100vw;
+//   position: relative;
 
   .works-block {
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     flex-wrap: wrap;
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // min-width: 100%;
 
     @media all and (max-width: 968px) {
       .work-item:nth-child(n + 7) {
@@ -60,7 +60,7 @@
       }
     }
   }
-}
+// }
 
 .work-content {
   position: absolute;
