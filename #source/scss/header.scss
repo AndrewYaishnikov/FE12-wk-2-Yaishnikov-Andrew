@@ -104,9 +104,11 @@
             line-height: normal;
             opacity: 0.75;
             outline: none;
+            transition: 0.2s;
 
-            // &:hover {
-            //   color: #e84545;
+            &:hover {
+              color: #e84545;
+            }
             //   color: #ffffff;
           }
         }
