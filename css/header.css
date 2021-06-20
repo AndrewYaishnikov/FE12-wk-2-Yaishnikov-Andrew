@@ -36,8 +36,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 .header-column .header-nav {
+  position: fixed;
+  display: block;
+  width: 1170px;
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +51,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: relative;
   padding-top: 2.375rem;
   padding-bottom: 2.375rem;
   border-bottom: 1px solid #666666;

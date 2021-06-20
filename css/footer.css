@@ -238,7 +238,6 @@ footer .footer_contacts .container .footer__row .item-social .social-link .fa-fa
 footer .footer_contacts .container .footer__row .item-social .social-link:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  margin-bottom: 2rem;
 }
 footer .footer_contacts .container .item-about {
   display: -webkit-box;

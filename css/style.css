@@ -128,8 +128,13 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 .header-column .header-nav {
+  position: fixed;
+  display: block;
+  width: 1170px;
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,7 +143,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: relative;
   padding-top: 2.375rem;
   padding-bottom: 2.375rem;
   border-bottom: 1px solid #666666;
@@ -866,7 +870,6 @@ footer .footer_contacts .container .footer__row .item-social .social-link .fa-fa
 footer .footer_contacts .container .footer__row .item-social .social-link:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  margin-bottom: 2rem;
 }
 footer .footer_contacts .container .item-about {
   display: -webkit-box;

@@ -28,12 +28,17 @@
 .header-column {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   .header-nav {
+    position: fixed;
+    display: block;
+    width: 1170px;
+    z-index: 9999;
     display: flex;
     max-width: 100%;
     flex-direction: row;
-    position: relative;
+    // position: relative;
     padding-top: 2.375rem;
     padding-bottom: 2.375rem;
     border-bottom: 1px solid #666666;
